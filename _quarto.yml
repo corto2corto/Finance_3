@@ -2,6 +2,8 @@ project:
   type: book
   output-dir: docs
 
+lang: fr
+
 book:
   title: "Book test 3"
   author: "Norah Jones"
@@ -11,12 +13,18 @@ book:
     - intro.qmd
     - summary.qmd
     - references.qmd
+    
+  sidebar: 
+    style: docked
 
 bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    mainfont: "Computer Modern Serif"
+    theme: 
+      light: simplex
+      dark: solar
   pdf:
     documentclass: scrreprt
 
